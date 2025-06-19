@@ -1,3 +1,3 @@
-module github.com/bernmic/nforeader
+module github.com/medianexapp/nforeader
 
-go 1.17
+go 1.24

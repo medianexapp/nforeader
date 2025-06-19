@@ -2,7 +2,6 @@ package nfoparser
 
 import (
 	"encoding/xml"
-	"io/ioutil"
 	"os"
 	"testing"
 )
@@ -108,7 +107,7 @@ func TestMovieMarshal(t *testing.T) {
 }
 
 func TestMovieUnmarshal(t *testing.T) {
-	b, err := ioutil.ReadFile(movieNfoFile)
+	b, err := os.ReadFile(movieNfoFile)
 	if err != nil {
 		t.Fatalf("Could not read file '%s': %v\n", movieNfoFile, err)
 	}
